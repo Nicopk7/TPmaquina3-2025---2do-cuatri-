@@ -1,7 +1,9 @@
 #ifndef RAL_H_INCLUDED
 #define RAL_H_INCLUDED
-#define MAX_RAL 174//  110/0.93 ≈ 119
+#define MAX_RAL 173//  130/0.75 ≈ 173
 #include "Alumno.h"
+#include <string.h>
+#include <ctype.h>
 
  typedef struct
  {
@@ -23,19 +25,17 @@ void inicializarRAL(RAL *r){
     r->cantidad=0;
 }
 
-int hashing(char* x, int M){
+int hashingRAL(char* x, int M){
     int longitud, i;
-    int contador = 0:
+    int contador = 0;
     longitud = strlen(x);
     for(i = 0; i < longitud; i++)
         contador+=((int)x[i] * (i+1));
     return (contador %M);
 }
 
-#include <string.h>
-
 void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
-    int i = hashing(codigo, MAX_RAL);  //posición inicial
+    int i = hashingRAL(codigo, MAX_RAL);  //posición inicial
     int j = 0;
     int flag = -1;//guarda la primera posición libre encontrada
 
@@ -62,7 +62,7 @@ void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
             return;
         }
 
-        // Avanzar a la siguiente posición (sondeo lineal)
+        // Avanzar a la siguiente posición
         *costo += 1.0;
         i = (i + 1) % MAX_RAL;
         j++;
@@ -87,7 +87,6 @@ int alta_ral(RAL *r, Alumno a, int *exito, float *costo) {
         return *exito;
     }
 
-    // Busca si ya existe el alumno o una posición para insertarlo
     localizar_ral(*r, a.codigo, &pos, exito, costo);
 
     if (*exito == 1) {
@@ -111,13 +110,9 @@ int alta_ral(RAL *r, Alumno a, int *exito, float *costo) {
     return *exito;
 }
 
-
-#include <string.h>
-
 void baja_ral(RAL *r, Alumno a, int *exito, float *costo) {
     int pos = 0;
 
-    // Buscar el alumno en la estructura
     localizar_ral(*r, a.codigo, &pos, exito, costo);
 
     if (*exito != 1) {
@@ -125,7 +120,6 @@ void baja_ral(RAL *r, Alumno a, int *exito, float *costo) {
         return;
     }
 
-    // Verificar coincidencia completa (para confirmar baja)
     if (strcmp(r->arr[pos].dato.nombreapellido, a.nombreapellido) == 0 &&
         strcmp(r->arr[pos].dato.correo, a.correo) == 0 &&
         r->arr[pos].dato.nota == a.nota &&
@@ -140,23 +134,19 @@ void baja_ral(RAL *r, Alumno a, int *exito, float *costo) {
     }
 }
 
-
-#include <string.h>
-
-Alumno evocar_ral(RAL *r, char codigo[], int *exito, float *costo) {
+Alumno evocar_ral(RAL r, char codigo[], int *exito, float *costo) {
     int pos = 0;
-    Alumno aux; // se devuelve vacío si no se encuentra
+    Alumno aux;
     float c = 0.0;
 
-    localizar_ral(*r, codigo, &pos, exito, &c);
+    localizar_ral(r, codigo, &pos, exito, &c);
 
     if (*exito == 1) {
         *costo = c;
-        return r->arr[pos].dato; // alumno encontrado
+        return r.arr[pos].dato; // alumno encontrado
     } else {
         *costo = c;
         *exito = 0; // no encontrado
-        // Inicializa aux vacío antes de devolverlo (por seguridad)
         strcpy(aux.codigo, "");
         strcpy(aux.nombreapellido, "");
         strcpy(aux.correo, "");
@@ -164,6 +154,38 @@ Alumno evocar_ral(RAL *r, char codigo[], int *exito, float *costo) {
         strcpy(aux.condicionFinal, "");
         return aux;
     }
+}
+
+void mostrar_ral(RAL r){
+int i,j=0;
+for(i=0;i<MAX_RAL;i++){
+    if(r.arr[i].estado=='O'){
+        //muestro los datos
+        j++;
+        printf("Celda numero: %d\n",i);
+        printf("codigo: %s \n", r.arr[i].dato.codigo);
+        printf("Nombre y Apellido: %s \n", r.arr[i].dato.nombreapellido);
+        printf("Correo electrónico: %s \n", r.arr[i].dato.correo);
+        printf("Nota: %d \n", r.arr[i].dato.nota);
+        printf("Condicion Final: %s \n", r.arr[i].dato.condicionFinal);
+        printf("*********************************\n");
+        }//fin 1er if
+    if(r.arr[i].estado=='V'){
+        printf("*********************************\n");
+        printf("\n\tLa celda numero %d es virgen(V)\n",i);
+        printf("*********************************\n");
+    }
+
+    if(r.arr[i].estado=='L'){
+         printf("*********************************\n");
+         printf("\n\tLa celda numero %d es libre(L)\n",i);
+         printf("*********************************\n");}
+    if(i%5 == 0){
+        fflush(stdin);
+        printf("Presione ENTER para la página siguiente...\n");
+        getchar();
+        }
+    }//fin for
 }
 
 

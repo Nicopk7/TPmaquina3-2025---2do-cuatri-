@@ -1,5 +1,31 @@
 # depslib dependency file v1.0
-1584205420 source:f:\universidad\eda\tpm3\tpm3\main.c
+1760316272 source:f:\universidad\eda\tpm3\tpm3\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
+	<locale.h>
+	"Alumno.h"
+	"RAL.h"
+	"RAC.h"
+	"RS.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+
+1759961034 f:\universidad\eda\tpm3\tpm3\alumno.h
+
+1760316126 f:\universidad\eda\tpm3\tpm3\ral.h
+	"Alumno.h"
+	<string.h>
+	<ctype.h>
+
+1760316126 f:\universidad\eda\tpm3\tpm3\rac.h
+	"Alumno.h"
+	<string.h>
+	<ctype.h>
+
+1760316126 f:\universidad\eda\tpm3\tpm3\rs.h
+	"Alumno.h"
+	<ctype.h>
 
