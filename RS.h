@@ -12,6 +12,8 @@ typedef struct balde{
 
 typedef struct RS{
 	balde *X[fRS];
+	balde *cur;
+	balde *aux;
 	int CantR;
 }RS;
 
@@ -56,18 +58,22 @@ int strcompiRS(const char *s1, const char *s2) {
     return tolower((unsigned char)*s1) - tolower((unsigned char)*s2);
 }
 
-
 int localizarRS(RS *l, char *codigo, int *exito, float *costo, int *h) {
     *h = hashingRS(codigo, fRS);
     *costo = 0.0;
 
-    balde *act = l->X[*h];
-    while (act != NULL && strcmp(act->R.codigo, codigo) != 0) {
+    l->aux = NULL;
+    l->cur = l->X[*h];
+
+    while (l->cur != NULL && strcompiRS(l->cur->R.codigo, codigo) != 0) {
         (*costo)++;
-        act = act->next;
+
+        l->aux = l->cur;
+
+        l->cur = l->cur->next;
     }
 
-    if (act != NULL && strcmp(act->R.codigo, codigo) == 0) {
+    if (l->cur != NULL) {
         (*costo)++;
         *exito = 1;
     } else {
@@ -108,45 +114,29 @@ int altaRS(RS *l, Alumno a, int *exito, float *costo) {
 }
 
 int baja_RS(RS *l, Alumno a, int *exito, float *costo) {
-    int pos;
-    *costo = 0.0f;
-    *exito = 0;
+    int pos_h;
+    localizarRS(l, a.codigo, exito, costo, &pos_h);
 
-    pos = hashingRS(a.codigo, fRS);
-
-    balde *cur = l->X[pos];
-    balde *ant = NULL;
-
-    while (cur != NULL && strcompiRS(cur->R.codigo, a.codigo) != 0) {
-        (*costo) += 1.0f;
-        ant = cur;
-        cur = cur->next;
+    if (*exito == 0) {
+        return *exito; // no encontrado
     }
 
-    if (cur == NULL) {
-        *exito = 0; // no encontrado
-        return *exito;
-    }
 
-    /* comparar datos para confirmar baja */
-    if ( strcompiRS(cur->R.nombreapellido, a.nombreapellido) == 0 &&
-         strcompiRS(cur->R.correo, a.correo) == 0 &&
-         cur->R.nota == a.nota &&
-         strcompiRS(cur->R.condicionFinal, a.condicionFinal) == 0 ) {
+    if ( strcompiRS(l->cur->R.nombreapellido, a.nombreapellido) == 0 &&
+         strcompiRS(l->cur->R.correo, a.correo) == 0 &&
+         l->cur->R.nota == a.nota &&
+         strcompiRS(l->cur->R.condicionFinal, a.condicionFinal) == 0 ) {
 
-        /* remover nodo de la lista */
-        if (ant == NULL) {
-            /* era el primero */
-            l->X[pos] = cur->next;
+        if (l->aux == NULL) {
+            l->X[pos_h] = l->cur->next;
         } else {
-            ant->next = cur->next;
+            l->aux->next = l->cur->next;
         }
 
-        free(cur);
+        free(l->cur);
         l->CantR--;
         *exito = 1; /* baja exitosa */
     } else {
-        /* datos no coinciden */
         *exito = 0;
     }
 
@@ -155,24 +145,10 @@ int baja_RS(RS *l, Alumno a, int *exito, float *costo) {
 
 Alumno evocar_rs(RS l, const char codigo[], int *exito, float *costo) {
     Alumno aux = vacio;
-    int pos;
-    *costo = 0.0f;
-    *exito = 0;
-
-    pos = hashingRS(codigo, fRS);
-    balde *cur = l.X[pos];
-
-    while (cur != NULL && strcompiRS(cur->R.codigo, codigo) != 0) {
-        (*costo) += 1.0f;
-        cur = cur->next;
-    }
-
-    if (cur != NULL) {
-        (*costo) += 1.0f;
-        aux = cur->R;
-        *exito = 1; //Encontrado
-    } else {
-        *exito = 0; //no encontrado
+    int pos_h;
+    localizarRS(&l, (char *)codigo, exito, costo, &pos_h);
+    if (*exito == 1) {
+        aux = l.cur->R;
     }
 
     return aux;

@@ -1,6 +1,6 @@
 #ifndef RAC_H_INCLUDED
 #define RAC_H_INCLUDED
-#define MAX_RAC 127 // 130/0.81 ≈ 160
+#define MAX_RAC 163 // 130/0.81 ≈ 163
 #include "Alumno.h"
 #include <string.h>
 #include <ctype.h>
@@ -43,45 +43,45 @@ int strcompiRAC(const char *s1, const char *s2) {
 }
 
 void localizarRAC(RAC rac, char codigo[], int *pos, int *exito, float *costo) {
-    int i = hashingRAC(codigo, MAX_RAC);
-    int j = 0;
+
+    int pos_actual = hashingRAC(codigo, MAX_RAC);
     int flag = -1;
+    int intentos = 0;
+    int paso = 0;
 
-    while (j < MAX_RAC) {
-        // Si encuentra un balde libre (posible lugar de inserción)
-        if (rac.arr[i].estado == 'L' && flag == -1) {
-            flag = i;
-        }
-
-        // Si encuentra un balde virgen, ya no puede seguir buscando
-        if (rac.arr[i].estado == 'V') {
+    while (intentos < MAX_RAC) {
+        if (rac.arr[pos_actual].estado == 'V') {
             *costo += 1.0;
-            *pos = (flag == -1) ? i : flag;
-            *exito = 0; // no encontrado
+            *pos = (flag == -1) ? pos_actual : flag;
+            *exito = 0; // No encontrado
             return;
         }
 
-        // Si el balde está ocupado y el código coincide
-        if (rac.arr[i].estado == 'O' &&
-            strcmp(rac.arr[i].dato.codigo, codigo) == 0) {
+        if (rac.arr[pos_actual].estado == 'L' && flag == -1) {
+            flag = pos_actual;
+        }
+
+        if (rac.arr[pos_actual].estado == 'O' &&
+            strcompiRAC(rac.arr[pos_actual].dato.codigo, codigo) == 0) {
             *costo += 1.0;
-            *pos = i;
-            *exito = 1; // encontrado
+            *pos = pos_actual;
+            *exito = 1; // Encontrado
             return;
         }
 
-        // Siguiente posición con rebalse cuadrático
         *costo += 1.0;
-        j++;
-        i = (i + j * j) % MAX_RAC;
+        intentos++;
+
+        paso++;
+        pos_actual = (pos_actual + paso) % MAX_RAC;
+
     }
 
-    // Si recorrió todo el arreglo sin hallar celda virgen
     if (flag == -1)
-        *exito = -1; // lleno
+        *exito = -1;
     else {
         *pos = flag;
-        *exito = 0; // no encontrado, pero hay libre
+        *exito = 0; // No encontrado
     }
 }
 

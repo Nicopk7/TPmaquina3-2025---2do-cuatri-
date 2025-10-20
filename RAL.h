@@ -1,6 +1,6 @@
 #ifndef RAL_H_INCLUDED
 #define RAL_H_INCLUDED
-#define MAX_RAL 173//  130/0.75 ≈ 173
+#define MAX_RAL 179//  130/0.75 ≈ 179
 #include "Alumno.h"
 #include <string.h>
 #include <ctype.h>
@@ -34,6 +34,16 @@ int hashingRAL(char* x, int M){
     return (contador %M);
 }
 
+int strcompiRAL(const char *s1, const char *s2) {
+    while (*s1 && *s2) {
+        int c1 = tolower((unsigned char)*s1);
+        int c2 = tolower((unsigned char)*s2);
+        if (c1 != c2) return c1 - c2;
+        s1++; s2++;
+    }
+    return tolower((unsigned char)*s1) - tolower((unsigned char)*s2);
+}
+
 void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
     int i = hashingRAL(codigo, MAX_RAL);  //posición inicial
     int j = 0;
@@ -49,13 +59,13 @@ void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
         // Si el balde está virgen -> fin de búsqueda: no existe el alumno
         if (ral.arr[i].estado == 'V') {
             *costo += 1.0;
-            *pos = (flag == -1) ? i : flag; // si no hubo libre, usar esta
+            *pos = (flag == -1) ? i : flag; // si no hubo libre
             *exito = 0; // no encontrado
             return;
         }
 
         // Si el balde está ocupado, comparar código
-        if ((ral.arr[i].estado == 'O') && (strcmp(ral.arr[i].dato.codigo, codigo) == 0)) {
+        if ((ral.arr[i].estado == 'O') && (strcompiRAL(ral.arr[i].dato.codigo, codigo) == 0)) {
             *costo += 1.0;
             *pos = i;
             *exito = 1; // encontrado
@@ -120,10 +130,10 @@ void baja_ral(RAL *r, Alumno a, int *exito, float *costo) {
         return;
     }
 
-    if (strcmp(r->arr[pos].dato.nombreapellido, a.nombreapellido) == 0 &&
-        strcmp(r->arr[pos].dato.correo, a.correo) == 0 &&
+    if (strcompiRAL(r->arr[pos].dato.nombreapellido, a.nombreapellido) == 0 &&
+        strcompiRAL(r->arr[pos].dato.correo, a.correo) == 0 &&
         r->arr[pos].dato.nota == a.nota &&
-        strcmp(r->arr[pos].dato.condicionFinal, a.condicionFinal) == 0) {
+        strcompiRAL(r->arr[pos].dato.condicionFinal, a.condicionFinal) == 0) {
 
         // Marcar el balde como libre
         r->arr[pos].estado = 'L';
@@ -187,6 +197,8 @@ for(i=0;i<MAX_RAL;i++){
         }
     }//fin for
 }
+
+
 
 
 #endif // RAL_H_INCLUDED
