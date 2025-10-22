@@ -59,7 +59,7 @@ int strcompiRS(const char *s1, const char *s2) {
 }
 
 int localizarRS(RS *l, char *codigo, int *exito, float *costo, int *h) {
-    *h = hashingRS(codigo, fRS);
+    *h=hashingRS(codigo, fRS);
     *costo = 0.0;
 
     l->aux = NULL;
@@ -67,17 +67,17 @@ int localizarRS(RS *l, char *codigo, int *exito, float *costo, int *h) {
 
     while (l->cur != NULL && strcompiRS(l->cur->R.codigo, codigo) != 0) {
         (*costo)++;
-
         l->aux = l->cur;
-
         l->cur = l->cur->next;
     }
 
     if (l->cur != NULL) {
-        (*costo)++;
+
+        (*costo)++; // Suma 1 por el nodo encontrado
         *exito = 1;
     } else {
         *exito = 0;
+        (*costo)++; // Suma 1 por la consulta a "NULL"
     }
 
     return *exito;

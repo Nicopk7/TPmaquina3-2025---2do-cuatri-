@@ -51,11 +51,6 @@ void init_costos(v_costos *c){
     c->cant_evo_fail = 0;
 }
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <locale.h>
-
 int main(void)
 {
     setlocale(LC_ALL, "");
@@ -206,7 +201,7 @@ int main(void)
                                 break;
                             } // fin case 2
 
-                            case 3: { /* EVOCAR / MEDIR COSTOS */
+                            case 3: { /* EVOCAR */
                                 if(lineal.cantidad > 0){
                                     exito = 0;
                                     costo = 0.0f;
@@ -262,7 +257,7 @@ int main(void)
 
                     printf("Lineal:%d\n",lineal.cantidad);
                     printf("Cuadratico: %d\n",cuadratico.cantidad);
-                    printf("Separado: %d\n",r.CantR);///Aca va la cantidad de elementos printeada
+                    printf("Separado: %d\n",r.CantR);
                     printf("\t COMPARACION DE ESTRUCTURAS\n\n"
                    "COSTOS\t\tRS\tRAL\tRAC\n"
                    "_____________________________________________________\n");
