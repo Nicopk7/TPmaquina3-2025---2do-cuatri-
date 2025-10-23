@@ -26,7 +26,6 @@ void init_RS(RS *lis) {
     lis->CantR = 0;
 }
 
-
 void borrar_RS(RS *lis) {
     balde *tmp;
     for (int i = 0; i < fRS; i++) {
@@ -59,25 +58,22 @@ int strcompiRS(const char *s1, const char *s2) {
 }
 
 int localizarRS(RS *l, char *codigo, int *exito, float *costo, int *h) {
-    *h=hashingRS(codigo, fRS);
-    *costo = 0.0;
+    *h = hashingRS(codigo, fRS);
+    *costo = 1.0;
 
     l->aux = NULL;
     l->cur = l->X[*h];
 
     while (l->cur != NULL && strcompiRS(l->cur->R.codigo, codigo) != 0) {
-        (*costo)++;
         l->aux = l->cur;
         l->cur = l->cur->next;
+        (*costo)++;
     }
 
     if (l->cur != NULL) {
-
-        (*costo)++; // Suma 1 por el nodo encontrado
         *exito = 1;
     } else {
         *exito = 0;
-        (*costo)++; // Suma 1 por la consulta a "NULL"
     }
 
     return *exito;
@@ -88,28 +84,30 @@ int altaRS(RS *l, Alumno a, int *exito, float *costo) {
     float c = 0.0;
 
     localizarRS(l, a.codigo, exito, &c, &i);
+    *costo = c;
 
-    // Ya existe el alumno
     if (*exito == 1) {
         *exito = 0;
-        *costo = c;
         return *exito;
     }
 
-    // Crear nuevo nodo
     balde *nuevo = (balde *)malloc(sizeof(balde));
     if (nuevo == NULL) {
         *exito = -1;  // sin memoria
         return *exito;
     }
-
     nuevo->R = a;
-    nuevo->next = l->X[i];  // inserta al inicio de la lista
-    l->X[i] = nuevo;
+
+    if (l->aux == NULL) {
+        l->X[i] = nuevo;
+        nuevo->next = l->cur;
+    } else {
+        l->aux->next = nuevo;
+        nuevo->next = l->cur;
+    }
 
     l->CantR++;
     *exito = 1;
-    *costo = c;
     return *exito;
 }
 
@@ -163,7 +161,7 @@ void mostrar_rs(RS l) {
         } else {
             int c = 1;
             while (temp != NULL) {
-                printf("Elemento #%d del bucket %d\n", c++, i);
+                printf("Elemento #%d del balde %d\n", c++, i);
                 printf("Código: %s\n", temp->R.codigo);
                 printf("Nombre y Apellido: %s\n", temp->R.nombreapellido);
                 printf("Correo: %s\n", temp->R.correo);

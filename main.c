@@ -21,13 +21,12 @@
     El Rebalse Abierto Cuadratico es balanceado entre costos y una estructura abierta, pero sin los costos tan altos del RAL.
 
                                                                     COMPARACION DE ESTRUCTURAS
-
                                                                 COSTOS          RS      RAL     RAC
                                                                 _____________________________________________________
-                                                                MAX.EVOEX       5,00    81,00   16,00
-                                                                MED.EVOEX       1,74    16,47   3,06
-                                                                MAX.EVONOEX     3,00    94,00   25,00
-                                                                MED.EVONOEX     0,80    71,44   10,54
+                                                                MAX.EVOEX       5,00    81,00   14,00
+                                                                MED.EVOEX       1,69    16,47   4,57
+                                                                MAX.EVONOEX     4,00    94,00   15,00
+                                                                MED.EVONOEX     1,80    71,44   11,82
                                                                 -----------------------------------------------------
 
 */
@@ -261,12 +260,12 @@ int main(void)
                     printf("\t COMPARACION DE ESTRUCTURAS\n\n"
                    "COSTOS\t\tRS\tRAL\tRAC\n"
                    "_____________________________________________________\n");
-            printf("MAX.EVOEX\t%.2f\t%.2f\t%.2f\n",rs_c.max_evo_succ,ral_c.max_evo_succ,rac_c.max_evo_succ);
-            printf("MED.EVOEX\t%.2f\t%.2f\t%.2f\n",rs_c.med_evo_succ/rs_c.cant_evo_succ,ral_c.med_evo_succ/ral_c.cant_evo_succ,rac_c.med_evo_succ/rac_c.cant_evo_succ);
-            printf("MAX.EVONOEX\t%.2f\t%.2f\t%.2f\n",rs_c.max_evo_fail,ral_c.max_evo_fail,rac_c.max_evo_fail);
-            printf("MED.EVONOEX\t%.2f\t%.2f\t%.2f\n",rs_c.med_evo_fail/rs_c.cant_evo_fail,ral_c.med_evo_fail/ral_c.cant_evo_fail,rac_c.med_evo_fail/rac_c.cant_evo_fail);
-            printf("-----------------------------------------------------\n");
-            system("pause");
+                    printf("MAX.EVOEX\t%.2f\t%.2f\t%.2f\n",rs_c.max_evo_succ,ral_c.max_evo_succ,rac_c.max_evo_succ);
+                    printf("MED.EVOEX\t%.2f\t%.2f\t%.2f\n",rs_c.med_evo_succ/rs_c.cant_evo_succ,ral_c.med_evo_succ/ral_c.cant_evo_succ,rac_c.med_evo_succ/rac_c.cant_evo_succ);
+                    printf("MAX.EVONOEX\t%.2f\t%.2f\t%.2f\n",rs_c.max_evo_fail,ral_c.max_evo_fail,rac_c.max_evo_fail);
+                    printf("MED.EVONOEX\t%.2f\t%.2f\t%.2f\n",rs_c.med_evo_fail/rs_c.cant_evo_fail,ral_c.med_evo_fail/ral_c.cant_evo_fail,rac_c.med_evo_fail/rac_c.cant_evo_fail);
+                    printf("-----------------------------------------------------\n");
+                    system("pause");
             }
                 break;
             }

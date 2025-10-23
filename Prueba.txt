@@ -1,0 +1,46 @@
+1
+0650A25
+Babbage, Charles
+0650A25@mailbox.edu.ar
+9
+Promociona
+1
+0072A25
+Boole, George
+0072A25@mailbox.edu.ar
+7
+Regular
+1
+0335A25
+Lovelace, Ada
+0335A25@mailbox.edu.ar
+0
+Ausente
+1
+0927A25
+Shannon, Claude
+0927A25@mailbox.edu.ar
+5
+Libre
+1
+0498A25
+Turing, Alan
+0498A25@mailbox.edu.ar
+0
+Ausente
+2
+0335A25
+Lovelace, Ada
+0335A25@mailbox.edu.ar
+0
+Ausente
+2
+0498A25
+Turing, Alan
+0498A25@mailbox.edu.ar
+0
+Ausente
+3
+0927A25
+3
+0498A25

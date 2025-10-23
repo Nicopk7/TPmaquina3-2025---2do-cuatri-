@@ -43,44 +43,32 @@ int strcompiRAC(const char *s1, const char *s2) {
 }
 
 void localizarRAC(RAC rac, char codigo[], int *pos, int *exito, float *costo) {
-
     int pos_actual = hashingRAC(codigo, MAX_RAC);
     int flag = -1;
     int intentos = 0;
     int paso = 0;
+    *costo = 0.0;
 
-    while (intentos < MAX_RAC) {
-        if (rac.arr[pos_actual].estado == 'V') {
-            *costo += 1.0;
-            *pos = (flag == -1) ? pos_actual : flag;
-            *exito = 0; // No encontrado
-            return;
-        }
-
+    while (intentos < MAX_RAC && rac.arr[pos_actual].estado != 'V' &&
+           (rac.arr[pos_actual].estado != 'O' || strcompiRAC(rac.arr[pos_actual].dato.codigo, codigo) != 0))
+    {
         if (rac.arr[pos_actual].estado == 'L' && flag == -1) {
             flag = pos_actual;
         }
-
-        if (rac.arr[pos_actual].estado == 'O' &&
-            strcompiRAC(rac.arr[pos_actual].dato.codigo, codigo) == 0) {
-            *costo += 1.0;
-            *pos = pos_actual;
-            *exito = 1; // Encontrado
-            return;
-        }
-
-        *costo += 1.0;
+        (*costo)++;
         intentos++;
-
         paso++;
         pos_actual = (pos_actual + paso) % MAX_RAC;
-
     }
+    (*costo)++;
 
-    if (flag == -1)
-        *exito = -1;
-    else {
-        *pos = flag;
+    if (intentos < MAX_RAC && rac.arr[pos_actual].estado == 'O' && strcompiRAC(rac.arr[pos_actual].dato.codigo, codigo) == 0) {
+
+        *pos = pos_actual;
+        *exito = 1; // Encontrado
+    } else {
+
+        *pos = (flag == -1) ? pos_actual : flag;
         *exito = 0; // No encontrado
     }
 }
@@ -107,7 +95,7 @@ int alta_rac(RAC *rac, Alumno a, int *exito, float *costo) {
         return *exito;
     }
 
-    // Inserta nuevo alumno
+
     if (*exito == 0) {
         rac->arr[pos].dato = a;
         rac->arr[pos].estado = 'O';
@@ -130,7 +118,7 @@ void baja_rac(RAC *rac, Alumno a, int *exito, float *costo) {
             rac->arr[pos].dato.nota == a.nota &&
             strcompiRAC(rac->arr[pos].dato.condicionFinal, a.condicionFinal) == 0) {
 
-            rac->arr[pos].estado = 'L';   // marcar como libre
+            rac->arr[pos].estado = 'L';
             rac->cantidad--;
             *exito = 1; // Baja exitosa
         } else {
@@ -154,7 +142,6 @@ Alumno evocar_rac(RAC rac, char codigo[], int *exito, float *costo) {
         return rac.arr[pos].dato;
     } else {
         *exito = 0;
-        // Devuelve un alumno vacío
         memset(&aux, 0, sizeof(Alumno));
         return aux;
     }
@@ -164,7 +151,6 @@ void mostrar_rac(RAC r){
 int i,j=0;
 for(i=0;i<MAX_RAC;i++){
     if(r.arr[i].estado=='O'){
-        //muestro los datos
         j++;
         printf("Celda numero: %d\n",i);
         printf("codigo: %s \n", r.arr[i].dato.codigo);

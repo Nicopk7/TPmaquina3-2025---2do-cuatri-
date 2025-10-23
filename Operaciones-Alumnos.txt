@@ -1,3 +1,5 @@
+3
+0356A25
 1
 0650A25
 Babbage, Charles
@@ -28,6 +30,892 @@ Turing, Alan
 0498A25@mailbox.edu.ar
 0
 Ausente
+1
+0457A25
+Zuse, Konrad
+0457A25@mailbox.edu.ar
+7
+Regular
+1
+0937A25
+Hopper, Grace
+0937A25@mailbox.edu.ar
+0
+Ausente
+1
+0797A25
+Snyder Holberton, Betty
+0797A25@mailbox.edu.ar
+8
+Promociona
+1
+0994A25
+Wescoff Meltzer, Marlyn
+0994A25@mailbox.edu.ar
+6
+Regular
+1
+0907A25
+Blanch, Gertrude
+0907A25@mailbox.edu.ar
+0
+Ausente
+1
+0208A25
+Vaughan, Dorothy
+0208A25@mailbox.edu.ar
+10
+Promociona
+1
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+1
+0997A25
+Bartik, Jean
+0997A25@mailbox.edu.ar
+3
+Libre
+1
+0305A25
+Feynman, Richard
+0305A25@mailbox.edu.ar
+0
+Ausente
+1
+0216A25
+Hamming, Richard
+0216A25@mailbox.edu.ar
+8
+Promociona
+1
+0152A25
+Backus, John
+0152A25@mailbox.edu.ar
+9
+Promociona
+1
+0882A25
+Codd, Edgar F.
+0882A25@mailbox.edu.ar
+3
+Libre
+1
+0575A25
+McCarthy, John
+0575A25@mailbox.edu.ar
+3
+Libre
+1
+0974A25
+Sutherland, Ivan
+0974A25@mailbox.edu.ar
+5
+Libre
+1
+0454A25
+Engelbart, Douglas
+0454A25@mailbox.edu.ar
+7
+Regular
+1
+0440A25
+Dahl, Ole-Johan
+0440A25@mailbox.edu.ar
+8
+Promociona
+1
+0721A25
+Naur, Peter
+0721A25@mailbox.edu.ar
+2
+Libre
+1
+0151A25
+Knuth, Donald
+0151A25@mailbox.edu.ar
+10
+Promociona
+1
+0576A25
+Dijkstra, Edsger W.
+0576A25@mailbox.edu.ar
+4
+Libre
+1
+0757A25
+Kay, Alan
+0757A25@mailbox.edu.ar
+8
+Promociona
+1
+0195A25
+Huffman, David
+0195A25@mailbox.edu.ar
+4
+Libre
+1
+0482A25
+Cerf, Vinton
+0482A25@mailbox.edu.ar
+2
+Libre
+1
+0063A25
+Kernighan, Brian
+0063A25@mailbox.edu.ar
+5
+Libre
+1
+0581A25
+Ritchie, Dennis
+0581A25@mailbox.edu.ar
+2
+Libre
+1
+0949A25
+Thompson, Ken
+0949A25@mailbox.edu.ar
+5
+Libre
+1
+0840A25
+Licklider, J.C.R.
+0840A25@mailbox.edu.ar
+4
+Libre
+1
+0857A25
+Moore, Gordon
+0857A25@mailbox.edu.ar
+9
+Promociona
+1
+0272A25
+Metcalfe, Robert
+0272A25@mailbox.edu.ar
+5
+Libre
+1
+0537A25
+Noyce, Robert
+0537A25@mailbox.edu.ar
+8
+Promociona
+1
+0341A25
+Bechtolsheim, Andy
+0341A25@mailbox.edu.ar
+3
+Libre
+1
+0217A25
+Lampson, Butler
+0217A25@mailbox.edu.ar
+5
+Libre
+1
+0659A25
+Wirth, Niklaus
+0659A25@mailbox.edu.ar
+10
+Promociona
+1
+0308A25
+Markoff, John
+0308A25@mailbox.edu.ar
+7
+Regular
+1
+0062A25
+Pike, Rob
+0062A25@mailbox.edu.ar
+9
+Promociona
+1
+0065A25
+McIlroy, Douglas
+0065A25@mailbox.edu.ar
+0
+Ausente
+1
+0194A25
+Parnas, David
+0194A25@mailbox.edu.ar
+4
+Libre
+1
+0714A25
+Boehm, Barry
+0714A25@mailbox.edu.ar
+0
+Ausente
+1
+0485A25
+Joy, Bill
+0485A25@mailbox.edu.ar
+7
+Regular
+1
+0926A25
+Minsky, Marvin
+0926A25@mailbox.edu.ar
+4
+Libre
+1
+0199A25
+Rosenblatt, Frank
+0199A25@mailbox.edu.ar
+8
+Promociona
+1
+0512A25
+Kurzweil, Ray
+0512A25@mailbox.edu.ar
+3
+Libre
+1
+0996A25
+Brand, Stewart
+0996A25@mailbox.edu.ar
+2
+Libre
+1
+0864A25
+Jobs, Steve
+0864A25@mailbox.edu.ar
+10
+Promociona
+1
+0603A25
+Gates, Bill
+0603A25@mailbox.edu.ar
+8
+Promociona
+1
+0685A25
+Page, Larry
+0685A25@mailbox.edu.ar
+5
+Libre
+1
+0237A25
+Brin, Sergey
+0237A25@mailbox.edu.ar
+6
+Regular
+1
+0877A25
+Lee, John A.N.
+0877A25@mailbox.edu.ar
+8
+Promociona
+1
+0224A25
+Mitchell, Tom
+0224A25@mailbox.edu.ar
+9
+Promociona
+1
+0233A25
+Kahneman, Daniel
+0233A25@mailbox.edu.ar
+0
+Ausente
+1
+0705A25
+Reddy, Raj
+0705A25@mailbox.edu.ar
+9
+Promociona
+1
+0889A25
+Hassabis, Demis
+0889A25@mailbox.edu.ar
+9
+Promociona
+1
+0522A25
+Ng, Andrew
+0522A25@mailbox.edu.ar
+3
+Libre
+1
+0033A25
+Hinton, Geoffrey
+0033A25@mailbox.edu.ar
+0
+Ausente
+1
+0815A25
+LeCun, Yann
+0815A25@mailbox.edu.ar
+10
+Promociona
+1
+0751A25
+Fei-Fei, Li
+0751A25@mailbox.edu.ar
+7
+Regular
+1
+0646A25
+Goldwasser, Shafi
+0646A25@mailbox.edu.ar
+5
+Libre
+1
+0594A25
+Koller, Daphne
+0594A25@mailbox.edu.ar
+5
+Libre
+1
+0591A25
+Sakurai, Tomoya
+0591A25@mailbox.edu.ar
+2
+Libre
+1
+0812A25
+Sakamoto, Tatsuya
+0812A25@mailbox.edu.ar
+7
+Regular
+1
+0395A25
+Sakoda, Walter
+0395A25@mailbox.edu.ar
+4
+Libre
+1
+0509A25
+Sakamoto, Tatsuya
+0509A25@mailbox.edu.ar
+0
+Ausente
+1
+0423A25
+Torvalds, Linus
+0423A25@mailbox.edu.ar
+4
+Libre
+1
+0060A25
+Abelson, Hal
+0060A25@mailbox.edu.ar
+7
+Regular
+1
+0479A25
+Sussman, Gerald Jay
+0479A25@mailbox.edu.ar
+0
+Ausente
+1
+0154A25
+Blum, Lenore
+0154A25@mailbox.edu.ar
+0
+Ausente
+1
+0669A25
+Gray, Jim
+0669A25@mailbox.edu.ar
+2
+Libre
+1
+0701A25
+Hastings, Reed
+0701A25@mailbox.edu.ar
+7
+Regular
+1
+0372A25
+Lazaridis, Mike
+0372A25@mailbox.edu.ar
+2
+Libre
+1
+0351A25
+Molina, Mario
+0351A25@mailbox.edu.ar
+0
+Ausente
+1
+0004A25
+Faggin, Federico
+0004A25@mailbox.edu.ar
+0
+Ausente
+1
+0955A25
+Huang, Jensen
+0955A25@mailbox.edu.ar
+6
+Regular
+1
+0525A25
+Musk, Elon
+0525A25@mailbox.edu.ar
+6
+Regular
+1
+0435A25
+Franklin, Benjamin
+0435A25@mailbox.edu.ar
+2
+Libre
+1
+0852A25
+Cohen, Danny
+0852A25@mailbox.edu.ar
+10
+Promociona
+1
+0172A25
+Cohen, David
+0172A25@mailbox.edu.ar
+7
+Regular
+1
+0475A25
+Cox, Brad
+0475A25@mailbox.edu.ar
+0
+Ausente
+1
+0183A25
+Clarke, Thomas
+0183A25@mailbox.edu.ar
+10
+Promociona
+1
+0300A25
+Chamberlin, Donald D.
+0300A25@mailbox.edu.ar
+0
+Ausente
+1
+0725A25
+Pausch, Randy
+0725A25@mailbox.edu.ar
+6
+Regular
+1
+0076A25
+Kosslyn, Stephen
+0076A25@mailbox.edu.ar
+7
+Regular
+1
+0781A25
+Kossuth, Lajos
+0781A25@mailbox.edu.ar
+6
+Regular
+1
+0491A25
+Kossuth, Peter
+0491A25@mailbox.edu.ar
+3
+Libre
+1
+0868A25
+Robertson, Allen
+0868A25@mailbox.edu.ar
+8
+Promociona
+1
+0229A25
+Roth, Alvin
+0229A25@mailbox.edu.ar
+4
+Libre
+1
+0220A25
+Shaw, Mary
+0220A25@mailbox.edu.ar
+4
+Libre
+1
+0631A25
+Sakharov, Andrei
+0631A25@mailbox.edu.ar
+7
+Regular
+1
+0096A25
+Pogue, David
+0096A25@mailbox.edu.ar
+4
+Libre
+1
+0030A25
+Langer, Susan
+0030A25@mailbox.edu.ar
+9
+Promociona
+1
+0538A25
+Barrett, Brendan
+0538A25@mailbox.edu.ar
+10
+Promociona
+1
+0316A25
+Moggridge, Bill
+0316A25@mailbox.edu.ar
+4
+Libre
+1
+0111A25
+McCool, Michael
+0111A25@mailbox.edu.ar
+10
+Promociona
+1
+0790A25
+Harris, Sydney
+0790A25@mailbox.edu.ar
+9
+Promociona
+1
+0850A25
+Green, Melanie
+0850A25@mailbox.edu.ar
+3
+Libre
+1
+0278A25
+Mark Dean, Mark
+0278A25@mailbox.edu.ar
+2
+Libre
+1
+0784A25
+Thrun, Sebastian
+0784A25@mailbox.edu.ar
+8
+Promociona
+1
+0650A25
+Babbage, Charles
+0650A25@mailbox.edu.ar
+9
+Promociona
+1
+0072A25
+Boole, George
+0072A25@mailbox.edu.ar
+7
+Regular
+1
+0335A25
+Lovelace, Ada
+0335A25@mailbox.edu.ar
+0
+Ausente
+1
+0927A25
+Shannon, Claude
+0927A25@mailbox.edu.ar
+5
+Libre
+1
+0498A25
+Turing, Alan
+0498A25@mailbox.edu.ar
+0
+Ausente
+1
+0457A25
+Zuse, Konrad
+0457A25@mailbox.edu.ar
+7
+Regular
+1
+0937A25
+Hopper, Grace
+0937A25@mailbox.edu.ar
+0
+Ausente
+1
+0797A25
+Snyder Holberton, Betty
+0797A25@mailbox.edu.ar
+8
+Promociona
+1
+0994A25
+Wescoff Meltzer, Marlyn
+0994A25@mailbox.edu.ar
+6
+Regular
+1
+0907A25
+Blanch, Gertrude
+0907A25@mailbox.edu.ar
+0
+Ausente
+1
+0208A25
+Vaughan, Dorothy
+0208A25@mailbox.edu.ar
+10
+Promociona
+1
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+1
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+3
+0650A25
+3
+0072A25
+3
+0335A25
+3
+0927A25
+3
+0498A25
+3
+0457A25
+3
+0937A25
+3
+0797A25
+3
+0994A25
+3
+0907A25
+3
+0208A25
+3
+0356A25
+3
+0997A25
+3
+0305A25
+3
+0216A25
+3
+0152A25
+3
+0882A25
+3
+0575A25
+3
+0974A25
+3
+0454A25
+3
+0440A25
+3
+0721A25
+3
+0151A25
+3
+0576A25
+3
+0757A25
+3
+0195A25
+3
+0482A25
+3
+0063A25
+3
+0581A25
+3
+0949A25
+3
+0840A25
+3
+0857A25
+3
+0272A25
+3
+0537A25
+3
+0341A25
+3
+0217A25
+3
+0659A25
+3
+0308A25
+3
+0062A25
+3
+0065A25
+3
+0194A25
+3
+0714A25
+3
+0485A25
+3
+0926A25
+3
+0199A25
+3
+0512A25
+3
+0996A25
+3
+0864A25
+3
+0603A25
+3
+0685A25
+3
+0237A25
+3
+0877A25
+3
+0224A25
+3
+0233A25
+3
+0705A25
+3
+0889A25
+3
+0522A25
+3
+0033A25
+3
+0815A25
+3
+0751A25
+3
+0646A25
+3
+0594A25
+3
+0591A25
+3
+0812A25
+3
+0395A25
+3
+0509A25
+3
+0423A25
+3
+0060A25
+3
+0479A25
+3
+0154A25
+3
+0669A25
+3
+0701A25
+3
+0372A25
+3
+0351A25
+3
+0004A25
+3
+0955A25
+3
+0525A25
+3
+0435A25
+3
+0852A25
+3
+0172A25
+3
+0475A25
+3
+0183A25
+3
+0300A25
+3
+0725A25
+3
+0076A25
+3
+0781A25
+3
+0491A25
+3
+0868A25
+3
+0229A25
+3
+0220A25
+3
+0631A25
+3
+0096A25
+3
+0030A25
+3
+0538A25
+3
+0316A25
+3
+0111A25
+3
+0790A25
+3
+0850A25
+3
+0278A25
+3
+0784A25
+3
+0650A25
+3
+0072A25
+3
+0335A25
+3
+0927A25
+3
+0498A25
+3
+0457A25
+3
+0937A25
+3
+0797A25
+3
+0994A25
+3
+0907A25
+3
+0208A25
+3
+0356A25
+3
+0356A25
+2
+0650A25
+Babbage, Charles
+0650A25@mailbox.edu.ar
+9
+Promociona
+2
+0072A25
+Boole, George
+0072A25@mailbox.edu.ar
+7
+Regular
 2
 0335A25
 Lovelace, Ada
@@ -35,12 +923,1756 @@ Lovelace, Ada
 0
 Ausente
 2
+0927A25
+Shannon, Claude
+0927A25@mailbox.edu.ar
+5
+Libre
+2
 0498A25
 Turing, Alan
 0498A25@mailbox.edu.ar
+0
+Ausente
+2
+0457A25
+Zuse, Konrad
+0457A25@mailbox.edu.ar
+7
+Regular
+2
+0937A25
+Hopper, Grace
+0937A25@mailbox.edu.ar
+0
+Ausente
+2
+0797A25
+Snyder Holberton, Betty
+0797A25@mailbox.edu.ar
+8
+Promociona
+2
+0994A25
+Wescoff Meltzer, Marlyn
+0994A25@mailbox.edu.ar
+6
+Regular
+2
+0907A25
+Blanch, Gertrude
+0907A25@mailbox.edu.ar
+0
+Ausente
+2
+0208A25
+Vaughan, Dorothy
+0208A25@mailbox.edu.ar
+10
+Promociona
+2
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+2
+0997A25
+Bartik, Jean
+0997A25@mailbox.edu.ar
+3
+Libre
+2
+0305A25
+Feynman, Richard
+0305A25@mailbox.edu.ar
+0
+Ausente
+2
+0216A25
+Hamming, Richard
+0216A25@mailbox.edu.ar
+8
+Promociona
+2
+0152A25
+Backus, John
+0152A25@mailbox.edu.ar
+9
+Promociona
+2
+0882A25
+Codd, Edgar F.
+0882A25@mailbox.edu.ar
+3
+Libre
+2
+0575A25
+McCarthy, John
+0575A25@mailbox.edu.ar
+3
+Libre
+2
+0974A25
+Sutherland, Ivan
+0974A25@mailbox.edu.ar
+5
+Libre
+2
+0454A25
+Engelbart, Douglas
+0454A25@mailbox.edu.ar
+7
+Regular
+2
+0440A25
+Dahl, Ole-Johan
+0440A25@mailbox.edu.ar
+8
+Promociona
+2
+0721A25
+Naur, Peter
+0721A25@mailbox.edu.ar
+2
+Libre
+2
+0151A25
+Knuth, Donald
+0151A25@mailbox.edu.ar
+10
+Promociona
+2
+0576A25
+Dijkstra, Edsger W.
+0576A25@mailbox.edu.ar
+4
+Libre
+2
+0757A25
+Kay, Alan
+0757A25@mailbox.edu.ar
+8
+Promociona
+2
+0195A25
+Huffman, David
+0195A25@mailbox.edu.ar
+4
+Libre
+2
+0482A25
+Cerf, Vinton
+0482A25@mailbox.edu.ar
+2
+Libre
+2
+0063A25
+Kernighan, Brian
+0063A25@mailbox.edu.ar
+5
+Libre
+2
+0581A25
+Ritchie, Dennis
+0581A25@mailbox.edu.ar
+2
+Libre
+2
+0949A25
+Thompson, Ken
+0949A25@mailbox.edu.ar
+5
+Libre
+2
+0840A25
+Licklider, J.C.R.
+0840A25@mailbox.edu.ar
+4
+Libre
+2
+0857A25
+Moore, Gordon
+0857A25@mailbox.edu.ar
+9
+Promociona
+2
+0272A25
+Metcalfe, Robert
+0272A25@mailbox.edu.ar
+5
+Libre
+2
+0537A25
+Noyce, Robert
+0537A25@mailbox.edu.ar
+8
+Promociona
+2
+0341A25
+Bechtolsheim, Andy
+0341A25@mailbox.edu.ar
+3
+Libre
+2
+0217A25
+Lampson, Butler
+0217A25@mailbox.edu.ar
+5
+Libre
+2
+0659A25
+Wirth, Niklaus
+0659A25@mailbox.edu.ar
+10
+Promociona
+2
+0308A25
+Markoff, John
+0308A25@mailbox.edu.ar
+7
+Regular
+2
+0062A25
+Pike, Rob
+0062A25@mailbox.edu.ar
+9
+Promociona
+2
+0065A25
+McIlroy, Douglas
+0065A25@mailbox.edu.ar
+0
+Ausente
+2
+0194A25
+Parnas, David
+0194A25@mailbox.edu.ar
+4
+Libre
+2
+0714A25
+Boehm, Barry
+0714A25@mailbox.edu.ar
+0
+Ausente
+2
+0485A25
+Joy, Bill
+0485A25@mailbox.edu.ar
+7
+Regular
+2
+0926A25
+Minsky, Marvin
+0926A25@mailbox.edu.ar
+4
+Libre
+2
+0199A25
+Rosenblatt, Frank
+0199A25@mailbox.edu.ar
+8
+Promociona
+2
+0512A25
+Kurzweil, Ray
+0512A25@mailbox.edu.ar
+3
+Libre
+2
+0996A25
+Brand, Stewart
+0996A25@mailbox.edu.ar
+2
+Libre
+2
+0864A25
+Jobs, Steve
+0864A25@mailbox.edu.ar
+10
+Promociona
+2
+0603A25
+Gates, Bill
+0603A25@mailbox.edu.ar
+8
+Promociona
+2
+0685A25
+Page, Larry
+0685A25@mailbox.edu.ar
+5
+Libre
+2
+0237A25
+Brin, Sergey
+0237A25@mailbox.edu.ar
+6
+Regular
+2
+0877A25
+Lee, John A.N.
+0877A25@mailbox.edu.ar
+8
+Promociona
+2
+0224A25
+Mitchell, Tom
+0224A25@mailbox.edu.ar
+9
+Promociona
+2
+0233A25
+Kahneman, Daniel
+0233A25@mailbox.edu.ar
+0
+Ausente
+2
+0705A25
+Reddy, Raj
+0705A25@mailbox.edu.ar
+9
+Promociona
+2
+0889A25
+Hassabis, Demis
+0889A25@mailbox.edu.ar
+9
+Promociona
+2
+0522A25
+Ng, Andrew
+0522A25@mailbox.edu.ar
+3
+Libre
+2
+0033A25
+Hinton, Geoffrey
+0033A25@mailbox.edu.ar
+0
+Ausente
+2
+0815A25
+LeCun, Yann
+0815A25@mailbox.edu.ar
+10
+Promociona
+2
+0751A25
+Fei-Fei, Li
+0751A25@mailbox.edu.ar
+7
+Regular
+2
+0646A25
+Goldwasser, Shafi
+0646A25@mailbox.edu.ar
+5
+Libre
+2
+0594A25
+Koller, Daphne
+0594A25@mailbox.edu.ar
+5
+Libre
+2
+0591A25
+Sakurai, Tomoya
+0591A25@mailbox.edu.ar
+2
+Libre
+2
+0812A25
+Sakamoto, Tatsuya
+0812A25@mailbox.edu.ar
+7
+Regular
+2
+0395A25
+Sakoda, Walter
+0395A25@mailbox.edu.ar
+4
+Libre
+2
+0509A25
+Sakamoto, Tatsuya
+0509A25@mailbox.edu.ar
+0
+Ausente
+2
+0423A25
+Torvalds, Linus
+0423A25@mailbox.edu.ar
+4
+Libre
+2
+0060A25
+Abelson, Hal
+0060A25@mailbox.edu.ar
+7
+Regular
+2
+0479A25
+Sussman, Gerald Jay
+0479A25@mailbox.edu.ar
+0
+Ausente
+2
+0154A25
+Blum, Lenore
+0154A25@mailbox.edu.ar
+0
+Ausente
+2
+0669A25
+Gray, Jim
+0669A25@mailbox.edu.ar
+2
+Libre
+2
+0701A25
+Hastings, Reed
+0701A25@mailbox.edu.ar
+7
+Regular
+2
+0372A25
+Lazaridis, Mike
+0372A25@mailbox.edu.ar
+2
+Libre
+2
+0351A25
+Molina, Mario
+0351A25@mailbox.edu.ar
+0
+Ausente
+2
+0004A25
+Faggin, Federico
+0004A25@mailbox.edu.ar
+0
+Ausente
+2
+0955A25
+Huang, Jensen
+0955A25@mailbox.edu.ar
+6
+Regular
+2
+0525A25
+Musk, Elon
+0525A25@mailbox.edu.ar
+6
+Regular
+2
+0435A25
+Franklin, Benjamin
+0435A25@mailbox.edu.ar
+2
+Libre
+2
+0852A25
+Cohen, Danny
+0852A25@mailbox.edu.ar
+10
+Promociona
+2
+0172A25
+Cohen, David
+0172A25@mailbox.edu.ar
+7
+Regular
+2
+0475A25
+Cox, Brad
+0475A25@mailbox.edu.ar
+0
+Ausente
+2
+0183A25
+Clarke, Thomas
+0183A25@mailbox.edu.ar
+10
+Promociona
+2
+0300A25
+Chamberlin, Donald D.
+0300A25@mailbox.edu.ar
+0
+Ausente
+2
+0725A25
+Pausch, Randy
+0725A25@mailbox.edu.ar
+6
+Regular
+2
+0076A25
+Kosslyn, Stephen
+0076A25@mailbox.edu.ar
+7
+Regular
+2
+0781A25
+Kossuth, Lajos
+0781A25@mailbox.edu.ar
+6
+Regular
+2
+0491A25
+Kossuth, Peter
+0491A25@mailbox.edu.ar
+3
+Libre
+2
+0868A25
+Robertson, Allen
+0868A25@mailbox.edu.ar
+8
+Promociona
+2
+0229A25
+Roth, Alvin
+0229A25@mailbox.edu.ar
+4
+Libre
+2
+0220A25
+Shaw, Mary
+0220A25@mailbox.edu.ar
+4
+Libre
+2
+0631A25
+Sakharov, Andrei
+0631A25@mailbox.edu.ar
+7
+Regular
+2
+0096A25
+Pogue, David
+0096A25@mailbox.edu.ar
+4
+Libre
+2
+0030A25
+Langer, Susan
+0030A25@mailbox.edu.ar
+9
+Promociona
+2
+0538A25
+Barrett, Brendan
+0538A25@mailbox.edu.ar
+10
+Promociona
+2
+0316A25
+Moggridge, Bill
+0316A25@mailbox.edu.ar
+4
+Libre
+2
+0111A25
+McCool, Michael
+0111A25@mailbox.edu.ar
+10
+Promociona
+2
+0790A25
+Harris, Sydney
+0790A25@mailbox.edu.ar
+9
+Promociona
+2
+0850A25
+Green, Melanie
+0850A25@mailbox.edu.ar
+3
+Libre
+2
+0278A25
+Mark Dean, Mark
+0278A25@mailbox.edu.ar
+2
+Libre
+2
+0784A25
+Thrun, Sebastian
+0784A25@mailbox.edu.ar
+8
+Promociona
+2
+0650A25
+Babbage, Charles
+0650A25@mailbox.edu.ar
+9
+Promociona
+2
+0072A25
+Boole, George
+0072A25@mailbox.edu.ar
+7
+Regular
+2
+0335A25
+Lovelace, Ada
+0335A25@mailbox.edu.ar
+0
+Ausente
+2
+0927A25
+Shannon, Claude
+0927A25@mailbox.edu.ar
+5
+Libre
+2
+0498A25
+Turing, Alan
+0498A25@mailbox.edu.ar
+0
+Ausente
+2
+0457A25
+Zuse, Konrad
+0457A25@mailbox.edu.ar
+7
+Regular
+2
+0937A25
+Hopper, Grace
+0937A25@mailbox.edu.ar
+0
+Ausente
+2
+0797A25
+Snyder Holberton, Betty
+0797A25@mailbox.edu.ar
+8
+Promociona
+2
+0994A25
+Wescoff Meltzer, Marlyn
+0994A25@mailbox.edu.ar
+6
+Regular
+2
+0907A25
+Blanch, Gertrude
+0907A25@mailbox.edu.ar
+0
+Ausente
+2
+0208A25
+Vaughan, Dorothy
+0208A25@mailbox.edu.ar
+10
+Promociona
+2
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+2
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+1
+0650A25
+Babbage, Charles
+0650A25@mailbox.edu.ar
+9
+Promociona
+2
+0072A25
+Boole, George
+0072A25@mailbox.edu.ar
+7
+Regular
+2
+0335A25
+Lovelace, Ada
+0335A25@mailbox.edu.ar
+0
+Ausente
+2
+0927A25
+Shannon, Claude
+0927A25@mailbox.edu.ar
+5
+Libre
+1
+0498A25
+Turing, Alan
+0498A25@mailbox.edu.ar
+0
+Ausente
+2
+0457A25
+Zuse, Konrad
+0457A25@mailbox.edu.ar
+7
+Regular
+1
+0937A25
+Hopper, Grace
+0937A25@mailbox.edu.ar
+0
+Ausente
+2
+0797A25
+Snyder Holberton, Betty
+0797A25@mailbox.edu.ar
+8
+Promociona
+2
+0994A25
+Wescoff Meltzer, Marlyn
+0994A25@mailbox.edu.ar
+6
+Regular
+2
+0907A25
+Blanch, Gertrude
+0907A25@mailbox.edu.ar
+0
+Ausente
+1
+0208A25
+Vaughan, Dorothy
+0208A25@mailbox.edu.ar
+10
+Promociona
+3
+0356A25
+1
+0997A25
+Bartik, Jean
+0997A25@mailbox.edu.ar
+3
+Libre
+1
+0305A25
+Feynman, Richard
+0305A25@mailbox.edu.ar
+0
+Ausente
+2
+0216A25
+Hamming, Richard
+0216A25@mailbox.edu.ar
+8
+Promociona
+3
+0152A25
+1
+0882A25
+Codd, Edgar F.
+0882A25@mailbox.edu.ar
+3
+Libre
+1
+0575A25
+McCarthy, John
+0575A25@mailbox.edu.ar
+3
+Libre
+3
+0974A25
+1
+0454A25
+Engelbart, Douglas
+0454A25@mailbox.edu.ar
+7
+Regular
+3
+0440A25
+1
+0721A25
+Naur, Peter
+0721A25@mailbox.edu.ar
+2
+Libre
+1
+0151A25
+Knuth, Donald
+0151A25@mailbox.edu.ar
+10
+Promociona
+1
+0576A25
+Dijkstra, Edsger W.
+0576A25@mailbox.edu.ar
+4
+Libre
+3
+0757A25
+1
+0195A25
+Huffman, David
+0195A25@mailbox.edu.ar
+4
+Libre
+3
+0482A25
+3
+0063A25
+2
+0581A25
+Ritchie, Dennis
+0581A25@mailbox.edu.ar
+2
+Libre
+2
+0949A25
+Thompson, Ken
+0949A25@mailbox.edu.ar
+5
+Libre
+3
+0840A25
+1
+0857A25
+Moore, Gordon
+0857A25@mailbox.edu.ar
+9
+Promociona
+3
+0272A25
+3
+0537A25
+3
+0341A25
+3
+0217A25
+2
+0659A25
+Wirth, Niklaus
+0659A25@mailbox.edu.ar
+10
+Promociona
+1
+0308A25
+Markoff, John
+0308A25@mailbox.edu.ar
+7
+Regular
+3
+0062A25
+3
+0065A25
+2
+0194A25
+Parnas, David
+0194A25@mailbox.edu.ar
+4
+Libre
+2
+0714A25
+Boehm, Barry
+0714A25@mailbox.edu.ar
+0
+Ausente
+2
+0485A25
+Joy, Bill
+0485A25@mailbox.edu.ar
+7
+Regular
+2
+0926A25
+Minsky, Marvin
+0926A25@mailbox.edu.ar
+4
+Libre
+2
+0199A25
+Rosenblatt, Frank
+0199A25@mailbox.edu.ar
+8
+Promociona
+1
+0512A25
+Kurzweil, Ray
+0512A25@mailbox.edu.ar
+3
+Libre
+2
+0996A25
+Brand, Stewart
+0996A25@mailbox.edu.ar
+2
+Libre
+3
+0864A25
+2
+0603A25
+Gates, Bill
+0603A25@mailbox.edu.ar
+8
+Promociona
+2
+0685A25
+Page, Larry
+0685A25@mailbox.edu.ar
+5
+Libre
+1
+0237A25
+Brin, Sergey
+0237A25@mailbox.edu.ar
+6
+Regular
+1
+0877A25
+Lee, John A.N.
+0877A25@mailbox.edu.ar
+8
+Promociona
+1
+0224A25
+Mitchell, Tom
+0224A25@mailbox.edu.ar
+9
+Promociona
+3
+0233A25
+1
+0705A25
+Reddy, Raj
+0705A25@mailbox.edu.ar
+9
+Promociona
+2
+0889A25
+Hassabis, Demis
+0889A25@mailbox.edu.ar
+9
+Promociona
+1
+0522A25
+Ng, Andrew
+0522A25@mailbox.edu.ar
+3
+Libre
+1
+0033A25
+Hinton, Geoffrey
+0033A25@mailbox.edu.ar
+0
+Ausente
+2
+0815A25
+LeCun, Yann
+0815A25@mailbox.edu.ar
+10
+Promociona
+2
+0751A25
+Fei-Fei, Li
+0751A25@mailbox.edu.ar
+7
+Regular
+3
+0646A25
+3
+0594A25
+2
+0591A25
+Sakurai, Tomoya
+0591A25@mailbox.edu.ar
+2
+Libre
+2
+0812A25
+Sakamoto, Tatsuya
+0812A25@mailbox.edu.ar
+7
+Regular
+1
+0395A25
+Sakoda, Walter
+0395A25@mailbox.edu.ar
+4
+Libre
+1
+0509A25
+Sakamoto, Tatsuya
+0509A25@mailbox.edu.ar
+0
+Ausente
+2
+0423A25
+Torvalds, Linus
+0423A25@mailbox.edu.ar
+4
+Libre
+2
+0060A25
+Abelson, Hal
+0060A25@mailbox.edu.ar
+7
+Regular
+3
+0479A25
+3
+0154A25
+1
+0669A25
+Gray, Jim
+0669A25@mailbox.edu.ar
+2
+Libre
+1
+0701A25
+Hastings, Reed
+0701A25@mailbox.edu.ar
+7
+Regular
+1
+0372A25
+Lazaridis, Mike
+0372A25@mailbox.edu.ar
+2
+Libre
+3
+0351A25
+2
+0004A25
+Faggin, Federico
+0004A25@mailbox.edu.ar
+0
+Ausente
+2
+0955A25
+Huang, Jensen
+0955A25@mailbox.edu.ar
+6
+Regular
+3
+0525A25
+1
+0435A25
+Franklin, Benjamin
+0435A25@mailbox.edu.ar
+2
+Libre
+1
+0852A25
+Cohen, Danny
+0852A25@mailbox.edu.ar
+10
+Promociona
+2
+0172A25
+Cohen, David
+0172A25@mailbox.edu.ar
+7
+Regular
+1
+0475A25
+Cox, Brad
+0475A25@mailbox.edu.ar
+0
+Ausente
+1
+0183A25
+Clarke, Thomas
+0183A25@mailbox.edu.ar
+10
+Promociona
+3
+0300A25
+2
+0725A25
+Pausch, Randy
+0725A25@mailbox.edu.ar
+6
+Regular
+1
+0076A25
+Kosslyn, Stephen
+0076A25@mailbox.edu.ar
+7
+Regular
+1
+0781A25
+Kossuth, Lajos
+0781A25@mailbox.edu.ar
+6
+Regular
+2
+0491A25
+Kossuth, Peter
+0491A25@mailbox.edu.ar
+3
+Libre
+1
+0868A25
+Robertson, Allen
+0868A25@mailbox.edu.ar
+8
+Promociona
+3
+0229A25
+1
+0220A25
+Shaw, Mary
+0220A25@mailbox.edu.ar
+4
+Libre
+3
+0631A25
+2
+0096A25
+Pogue, David
+0096A25@mailbox.edu.ar
+4
+Libre
+1
+0030A25
+Langer, Susan
+0030A25@mailbox.edu.ar
+9
+Promociona
+2
+0538A25
+Barrett, Brendan
+0538A25@mailbox.edu.ar
+10
+Promociona
+1
+0316A25
+Moggridge, Bill
+0316A25@mailbox.edu.ar
+4
+Libre
+1
+0111A25
+McCool, Michael
+0111A25@mailbox.edu.ar
+10
+Promociona
+3
+0790A25
+3
+0850A25
+3
+0278A25
+3
+0784A25
+2
+0650A25
+Babbage, Charles
+0650A25@mailbox.edu.ar
+9
+Promociona
+2
+0072A25
+Boole, George
+0072A25@mailbox.edu.ar
+7
+Regular
+1
+0335A25
+Lovelace, Ada
+0335A25@mailbox.edu.ar
 0
 Ausente
 3
 0927A25
 3
 0498A25
+2
+0457A25
+Zuse, Konrad
+0457A25@mailbox.edu.ar
+7
+Regular
+1
+0937A25
+Hopper, Grace
+0937A25@mailbox.edu.ar
+0
+Ausente
+1
+0797A25
+Snyder Holberton, Betty
+0797A25@mailbox.edu.ar
+8
+Promociona
+3
+0994A25
+2
+0907A25
+Blanch, Gertrude
+0907A25@mailbox.edu.ar
+0
+Ausente
+1
+0208A25
+Vaughan, Dorothy
+0208A25@mailbox.edu.ar
+10
+Promociona
+3
+0356A25
+2
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+1
+0751A25
+Fei-Fei, Li
+0751A25@mailbox.edu.ar
+7
+Regular
+1
+0646A25
+Goldwasser, Shafi
+0646A25@mailbox.edu.ar
+5
+Libre
+1
+0594A25
+Koller, Daphne
+0594A25@mailbox.edu.ar
+5
+Libre
+1
+0591A25
+Sakurai, Tomoya
+0591A25@mailbox.edu.ar
+2
+Libre
+1
+0812A25
+Sakamoto, Tatsuya
+0812A25@mailbox.edu.ar
+7
+Regular
+1
+0395A25
+Sakoda, Walter
+0395A25@mailbox.edu.ar
+4
+Libre
+1
+0509A25
+Sakamoto, Tatsuya
+0509A25@mailbox.edu.ar
+0
+Ausente
+1
+0423A25
+Torvalds, Linus
+0423A25@mailbox.edu.ar
+4
+Libre
+1
+0060A25
+Abelson, Hal
+0060A25@mailbox.edu.ar
+7
+Regular
+1
+0479A25
+Sussman, Gerald Jay
+0479A25@mailbox.edu.ar
+0
+Ausente
+1
+0154A25
+Blum, Lenore
+0154A25@mailbox.edu.ar
+0
+Ausente
+1
+0669A25
+Gray, Jim
+0669A25@mailbox.edu.ar
+2
+Libre
+1
+0701A25
+Hastings, Reed
+0701A25@mailbox.edu.ar
+7
+Regular
+1
+0372A25
+Lazaridis, Mike
+0372A25@mailbox.edu.ar
+2
+Libre
+1
+0351A25
+Molina, Mario
+0351A25@mailbox.edu.ar
+0
+Ausente
+1
+0004A25
+Faggin, Federico
+0004A25@mailbox.edu.ar
+0
+Ausente
+1
+0955A25
+Huang, Jensen
+0955A25@mailbox.edu.ar
+6
+Regular
+1
+0525A25
+Musk, Elon
+0525A25@mailbox.edu.ar
+6
+Regular
+1
+0435A25
+Franklin, Benjamin
+0435A25@mailbox.edu.ar
+2
+Libre
+1
+0852A25
+Cohen, Danny
+0852A25@mailbox.edu.ar
+10
+Promociona
+1
+0172A25
+Cohen, David
+0172A25@mailbox.edu.ar
+7
+Regular
+1
+0475A25
+Cox, Brad
+0475A25@mailbox.edu.ar
+0
+Ausente
+1
+0183A25
+Clarke, Thomas
+0183A25@mailbox.edu.ar
+10
+Promociona
+1
+0300A25
+Chamberlin, Donald D.
+0300A25@mailbox.edu.ar
+0
+Ausente
+1
+0725A25
+Pausch, Randy
+0725A25@mailbox.edu.ar
+6
+Regular
+1
+0076A25
+Kosslyn, Stephen
+0076A25@mailbox.edu.ar
+7
+Regular
+1
+0781A25
+Kossuth, Lajos
+0781A25@mailbox.edu.ar
+6
+Regular
+1
+0491A25
+Kossuth, Peter
+0491A25@mailbox.edu.ar
+3
+Libre
+1
+0868A25
+Robertson, Allen
+0868A25@mailbox.edu.ar
+8
+Promociona
+1
+0229A25
+Roth, Alvin
+0229A25@mailbox.edu.ar
+4
+Libre
+1
+0220A25
+Shaw, Mary
+0220A25@mailbox.edu.ar
+4
+Libre
+1
+0631A25
+Sakharov, Andrei
+0631A25@mailbox.edu.ar
+7
+Regular
+1
+0096A25
+Pogue, David
+0096A25@mailbox.edu.ar
+4
+Libre
+1
+0030A25
+Langer, Susan
+0030A25@mailbox.edu.ar
+9
+Promociona
+1
+0538A25
+Barrett, Brendan
+0538A25@mailbox.edu.ar
+10
+Promociona
+1
+0316A25
+Moggridge, Bill
+0316A25@mailbox.edu.ar
+4
+Libre
+1
+0111A25
+McCool, Michael
+0111A25@mailbox.edu.ar
+10
+Promociona
+1
+0790A25
+Harris, Sydney
+0790A25@mailbox.edu.ar
+9
+Promociona
+1
+0850A25
+Green, Melanie
+0850A25@mailbox.edu.ar
+3
+Libre
+1
+0278A25
+Mark Dean, Mark
+0278A25@mailbox.edu.ar
+2
+Libre
+1
+0784A25
+Thrun, Sebastian
+0784A25@mailbox.edu.ar
+8
+Promociona
+1
+0650A25
+Babbage, Charles
+0650A25@mailbox.edu.ar
+9
+Promociona
+1
+0072A25
+Boole, George
+0072A25@mailbox.edu.ar
+7
+Regular
+1
+0335A25
+Lovelace, Ada
+0335A25@mailbox.edu.ar
+0
+Ausente
+1
+0927A25
+Shannon, Claude
+0927A25@mailbox.edu.ar
+5
+Libre
+1
+0498A25
+Turing, Alan
+0498A25@mailbox.edu.ar
+0
+Ausente
+1
+0457A25
+Zuse, Konrad
+0457A25@mailbox.edu.ar
+7
+Regular
+1
+0937A25
+Hopper, Grace
+0937A25@mailbox.edu.ar
+0
+Ausente
+1
+0797A25
+Snyder Holberton, Betty
+0797A25@mailbox.edu.ar
+8
+Promociona
+1
+0994A25
+Wescoff Meltzer, Marlyn
+0994A25@mailbox.edu.ar
+6
+Regular
+1
+0907A25
+Blanch, Gertrude
+0907A25@mailbox.edu.ar
+0
+Ausente
+1
+0208A25
+Vaughan, Dorothy
+0208A25@mailbox.edu.ar
+10
+Promociona
+1
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+1
+0356A25
+Guber, Rebeca
+0356A25@mailbox.edu.ar
+10
+Promociona
+3
+0650A25
+3
+0072A25
+3
+0335A25
+3
+0927A25
+3
+0498A25
+3
+0457A25
+3
+0937A25
+3
+0797A25
+3
+0994A25
+3
+0907A25
+3
+0208A25
+3
+0356A25
+3
+0997A25
+3
+0305A25
+3
+0216A25
+3
+0152A25
+3
+0882A25
+3
+0575A25
+3
+0974A25
+3
+0454A25
+3
+0440A25
+3
+0721A25
+3
+0151A25
+3
+0576A25
+3
+0757A25
+3
+0195A25
+3
+0482A25
+3
+0063A25
+3
+0581A25
+3
+0949A25
+3
+0840A25
+3
+0857A25
+3
+0272A25
+3
+0537A25
+3
+0341A25
+3
+0217A25
+3
+0659A25
+3
+0308A25
+3
+0062A25
+3
+0065A25
+3
+0194A25
+3
+0714A25
+3
+0485A25
+3
+0926A25
+3
+0199A25
+3
+0512A25
+3
+0996A25
+3
+0864A25
+3
+0603A25
+3
+0685A25
+3
+0237A25
+3
+0877A25
+3
+0224A25
+3
+0233A25
+3
+0705A25
+3
+0889A25
+3
+0522A25
+3
+0033A25
+3
+0815A25
+3
+0751A25
+3
+0646A25
+3
+0594A25
+3
+0591A25
+3
+0812A25
+3
+0395A25
+3
+0509A25
+3
+0423A25
+3
+0060A25
+3
+0479A25
+3
+0154A25
+3
+0669A25
+3
+0701A25
+3
+0372A25
+3
+0351A25
+3
+0004A25
+3
+0955A25
+3
+0525A25
+3
+0435A25
+3
+0852A25
+3
+0172A25
+3
+0475A25
+3
+0183A25
+3
+0300A25
+3
+0725A25
+3
+0076A25
+3
+0781A25
+3
+0491A25
+3
+0868A25
+3
+0229A25
+3
+0220A25
+3
+0631A25
+3
+0096A25
+3
+0030A25
+3
+0538A25
+3
+0316A25
+3
+0111A25
+3
+0790A25
+3
+0850A25
+3
+0278A25
+3
+0784A25
+3
+0650A25
+3
+0072A25
+3
+0335A25
+3
+0927A25
+3
+0498A25
+3
+0457A25
+3
+0937A25
+3
+0797A25
+3
+0994A25
+3
+0907A25
+3
+0208A25
+3
+0356A25

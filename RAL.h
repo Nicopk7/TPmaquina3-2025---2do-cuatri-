@@ -45,45 +45,32 @@ int strcompiRAL(const char *s1, const char *s2) {
 }
 
 void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
-    int i = hashingRAL(codigo, MAX_RAL);  //posición inicial
+    int i = hashingRAL(codigo, MAX_RAL);
     int j = 0;
-    int flag = -1;//guarda la primera posición libre encontrada
+    int flag = -1;
+    *costo = 0.0;
 
-    while (j < MAX_RAL) {
-
-        // Si el balde está libre
-        if ((ral.arr[i].estado == 'L') && (flag == -1)) {
+    while (j < MAX_RAL && ral.arr[i].estado != 'V' &&
+           (ral.arr[i].estado != 'O' || strcompiRAL(ral.arr[i].dato.codigo, codigo) != 0))
+    {
+        if (ral.arr[i].estado == 'L' && flag == -1) {
             flag = i;
         }
-
-        // Si el balde está virgen -> fin de búsqueda: no existe el alumno
-        if (ral.arr[i].estado == 'V') {
-            *costo += 1.0;
-            *pos = (flag == -1) ? i : flag; // si no hubo libre
-            *exito = 0; // no encontrado
-            return;
-        }
-
-        // Si el balde está ocupado, comparar código
-        if ((ral.arr[i].estado == 'O') && (strcompiRAL(ral.arr[i].dato.codigo, codigo) == 0)) {
-            *costo += 1.0;
-            *pos = i;
-            *exito = 1; // encontrado
-            return;
-        }
-
-        // Avanzar a la siguiente posición
-        *costo += 1.0;
+        (*costo)++;
         i = (i + 1) % MAX_RAL;
         j++;
     }
 
-    // Si recorrimos todo el arreglo y no encontramos espacio virgen
-    if (flag == -1)
-        *exito = -1; // lleno, sin espacio
-    else {
-        *pos = flag;
-        *exito = 0;  // no encontrado, pero hay lugar libre
+    (*costo)++;
+
+    if (j < MAX_RAL && ral.arr[i].estado == 'O' && strcompiRAL(ral.arr[i].dato.codigo, codigo) == 0) {
+
+        *pos = i;
+        *exito = 1; // Encontrado
+    } else {
+
+        *pos = (flag == -1) ? i : flag;
+        *exito = 0; // No encontrado
     }
 }
 
@@ -91,7 +78,6 @@ void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
 int alta_ral(RAL *r, Alumno a, int *exito, float *costo) {
     int pos = 0;
 
-    // Verifica si la estructura está llena
     if (r->cantidad == MAX_RAL) {
         *exito = -1;  // sin espacio
         return *exito;
@@ -110,7 +96,7 @@ int alta_ral(RAL *r, Alumno a, int *exito, float *costo) {
     }
 
     if (*exito == 0) {
-        // Inserta el alumno
+
         r->arr[pos].dato = a;
         r->arr[pos].estado = 'O';
         r->cantidad++;
@@ -135,7 +121,7 @@ void baja_ral(RAL *r, Alumno a, int *exito, float *costo) {
         r->arr[pos].dato.nota == a.nota &&
         strcompiRAL(r->arr[pos].dato.condicionFinal, a.condicionFinal) == 0) {
 
-        // Marcar el balde como libre
+
         r->arr[pos].estado = 'L';
         r->cantidad--;
         *exito = 1; // baja exitosa
@@ -170,7 +156,6 @@ void mostrar_ral(RAL r){
 int i,j=0;
 for(i=0;i<MAX_RAL;i++){
     if(r.arr[i].estado=='O'){
-        //muestro los datos
         j++;
         printf("Celda numero: %d\n",i);
         printf("codigo: %s \n", r.arr[i].dato.codigo);
@@ -195,7 +180,7 @@ for(i=0;i<MAX_RAL;i++){
         printf("Presione ENTER para la página siguiente...\n");
         getchar();
         }
-    }//fin for
+    }
 }
 
 
