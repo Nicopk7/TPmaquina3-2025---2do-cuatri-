@@ -25,3 +25,31 @@
 	"Alumno.h"
 	<ctype.h>
 
+1761278222 source:f:\universidad\eda\tpm3\tpm3\tpmaquina3-2025---2do-cuatri-\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	"Alumno.h"
+	"RAL.h"
+	"RAC.h"
+	"RS.h"
+
+1761272663 f:\universidad\eda\tpm3\tpm3\tpmaquina3-2025---2do-cuatri-\alumno.h
+
+1761279084 f:\universidad\eda\tpm3\tpm3\tpmaquina3-2025---2do-cuatri-\ral.h
+	"Alumno.h"
+	<string.h>
+	<ctype.h>
+
+1761279084 f:\universidad\eda\tpm3\tpm3\tpmaquina3-2025---2do-cuatri-\rac.h
+	"Alumno.h"
+	<string.h>
+	<ctype.h>
+
+1761279401 f:\universidad\eda\tpm3\tpm3\tpmaquina3-2025---2do-cuatri-\rs.h
+	"Alumno.h"
+	<ctype.h>
+	<string.h>
+	<stdlib.h>
+

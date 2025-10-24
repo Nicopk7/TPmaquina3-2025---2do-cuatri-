@@ -1,28 +1,32 @@
 #ifndef RS_H_INCLUDED
 #define RS_H_INCLUDED
 #include "Alumno.h"
-#define fRS  85    //     130/1.53 ≈ 85
+#define fRS 85 // 130/1.53 ≈ 85
 #include <ctype.h>
+#include <string.h>
+#include <stdlib.h>
 
-
+// ESTRUCTURAS
 typedef struct balde{
-	Alumno R;
-	struct balde *next;
-}balde;
+    Alumno R;
+    struct balde *next;
+} balde;
 
 typedef struct RS{
-	balde *X[fRS];
-	balde *cur;
-	balde *aux;
-	int CantR;
-}RS;
+    balde *X[fRS];
+    balde *cur;
+    balde *aux;
+    int CantR;
+} RS;
 
-Alumno vacio = {"","","",-1,""};
+Alumno vacio = {"", "", "", -1, ""};
 
 void init_RS(RS *lis) {
     for (int i = 0; i < fRS; i++) {
         lis->X[i] = NULL;
     }
+    lis->cur = NULL;
+    lis->aux = NULL;
     lis->CantR = 0;
 }
 
@@ -35,16 +39,18 @@ void borrar_RS(RS *lis) {
             free(tmp);
         }
     }
+    lis->cur = NULL;
+    lis->aux = NULL;
     lis->CantR = 0;
 }
 
-int hashingRS(char* x, int M){
+int hashingRS(char* x, int M) {
     int longitud, i;
     int contador = 0;
     longitud = strlen(x);
-    for(i = 0; i < longitud; i++)
-        contador+=((int)x[i] * (i+1));
-    return (contador %M);
+    for (i = 0; i < longitud; i++)
+        contador += ((int)x[i] * (i + 1));
+    return (contador % M);
 }
 
 int strcompiRS(const char *s1, const char *s2) {
@@ -59,53 +65,43 @@ int strcompiRS(const char *s1, const char *s2) {
 
 int localizarRS(RS *l, char *codigo, int *exito, float *costo, int *h) {
     *h = hashingRS(codigo, fRS);
+    *exito = 0;
     *costo = 1.0;
 
     l->aux = NULL;
     l->cur = l->X[*h];
 
-    while (l->cur != NULL && strcompiRS(l->cur->R.codigo, codigo) != 0) {
+    while (l->cur != NULL) {
+        (*costo)++;
+        if (strcmp(l->cur->R.codigo, codigo) == 0) {
+            *exito = 1;
+            break;
+        }
+
         l->aux = l->cur;
         l->cur = l->cur->next;
-        (*costo)++;
-    }
 
-    if (l->cur != NULL) {
-        *exito = 1;
-    } else {
-        *exito = 0;
     }
-
     return *exito;
 }
 
 int altaRS(RS *l, Alumno a, int *exito, float *costo) {
     int i;
-    float c = 0.0;
+    float costoaux = 0.0;
 
-    localizarRS(l, a.codigo, exito, &c, &i);
-    *costo = c;
-
-    if (*exito == 1) {
+    localizarRS(l, a.codigo, exito, &costoaux, &i);
+    if (*exito == 1) { // Ya existe
         *exito = 0;
         return *exito;
     }
-
     balde *nuevo = (balde *)malloc(sizeof(balde));
     if (nuevo == NULL) {
-        *exito = -1;  // sin memoria
+        *exito = -1;
         return *exito;
     }
     nuevo->R = a;
-
-    if (l->aux == NULL) {
-        l->X[i] = nuevo;
-        nuevo->next = l->cur;
-    } else {
-        l->aux->next = nuevo;
-        nuevo->next = l->cur;
-    }
-
+    nuevo->next = l->X[i];
+    l->X[i] = nuevo;
     l->CantR++;
     *exito = 1;
     return *exito;
@@ -113,17 +109,17 @@ int altaRS(RS *l, Alumno a, int *exito, float *costo) {
 
 int baja_RS(RS *l, Alumno a, int *exito, float *costo) {
     int pos_h;
-    localizarRS(l, a.codigo, exito, costo, &pos_h);
+    float costoaux = 0.0;
+    localizarRS(l, a.codigo, exito, &costoaux, &pos_h);
 
     if (*exito == 0) {
         return *exito; // no encontrado
     }
 
-
-    if ( strcompiRS(l->cur->R.nombreapellido, a.nombreapellido) == 0 &&
-         strcompiRS(l->cur->R.correo, a.correo) == 0 &&
-         l->cur->R.nota == a.nota &&
-         strcompiRS(l->cur->R.condicionFinal, a.condicionFinal) == 0 ) {
+    if (strcompiRS(l->cur->R.nombreapellido, a.nombreapellido) == 0 &&
+        strcompiRS(l->cur->R.correo, a.correo) == 0 &&
+        l->cur->R.nota == a.nota &&
+        strcompiRS(l->cur->R.condicionFinal, a.condicionFinal) == 0) {
 
         if (l->aux == NULL) {
             l->X[pos_h] = l->cur->next;
@@ -133,7 +129,10 @@ int baja_RS(RS *l, Alumno a, int *exito, float *costo) {
 
         free(l->cur);
         l->CantR--;
-        *exito = 1; /* baja exitosa */
+        *exito = 1;
+        l->cur = NULL;
+        l->aux = NULL;
+
     } else {
         *exito = 0;
     }
@@ -141,20 +140,22 @@ int baja_RS(RS *l, Alumno a, int *exito, float *costo) {
     return *exito;
 }
 
-Alumno evocar_rs(RS l, const char codigo[], int *exito, float *costo) {
+Alumno evocar_rs(RS *l, const char codigo[], int *exito, float *costo) {
     Alumno aux = vacio;
     int pos_h;
-    localizarRS(&l, (char *)codigo, exito, costo, &pos_h);
+
+    localizarRS(l, (char *)codigo, exito, costo, &pos_h);
+
     if (*exito == 1) {
-        aux = l.cur->R;
+        aux = l->cur->R;
     }
 
     return aux;
 }
 
-void mostrar_rs(RS l) {
+void mostrar_rs(RS *l) {
     for (int i = 0; i < fRS; i++) {
-        balde *temp = l.X[i];
+        balde *temp = l->X[i];
         printf("\n--- Balde %d ---\n", i);
         if (temp == NULL) {
             printf("Lista vacía.\n");
@@ -164,9 +165,6 @@ void mostrar_rs(RS l) {
                 printf("Elemento #%d del balde %d\n", c++, i);
                 printf("Código: %s\n", temp->R.codigo);
                 printf("Nombre y Apellido: %s\n", temp->R.nombreapellido);
-                printf("Correo: %s\n", temp->R.correo);
-                printf("Nota: %d\n", temp->R.nota);
-                printf("Condición final: %s\n", temp->R.condicionFinal);
                 printf("-------------------------\n");
                 temp = temp->next;
             }

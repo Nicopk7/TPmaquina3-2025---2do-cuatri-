@@ -1,6 +1,6 @@
 #ifndef RAL_H_INCLUDED
 #define RAL_H_INCLUDED
-#define MAX_RAL 179//  130/0.75 ≈ 179
+#define MAX_RAL 174//  130/0.75 ≈ 174
 #include "Alumno.h"
 #include <string.h>
 #include <ctype.h>
@@ -44,16 +44,16 @@ int strcompiRAL(const char *s1, const char *s2) {
     return tolower((unsigned char)*s1) - tolower((unsigned char)*s2);
 }
 
-void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
+void localizar_ral(RAL *ral, char codigo[], int *pos, int *exito, float *costo) {
     int i = hashingRAL(codigo, MAX_RAL);
     int j = 0;
     int flag = -1;
     *costo = 0.0;
 
-    while (j < MAX_RAL && ral.arr[i].estado != 'V' &&
-           (ral.arr[i].estado != 'O' || strcompiRAL(ral.arr[i].dato.codigo, codigo) != 0))
+    while (j < MAX_RAL && ral->arr[i].estado != 'V' &&
+           (ral->arr[i].estado != 'O' || strcmp(ral->arr[i].dato.codigo, codigo) != 0))
     {
-        if (ral.arr[i].estado == 'L' && flag == -1) {
+        if (ral->arr[i].estado == 'L' && flag == -1) {
             flag = i;
         }
         (*costo)++;
@@ -63,12 +63,10 @@ void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
 
     (*costo)++;
 
-    if (j < MAX_RAL && ral.arr[i].estado == 'O' && strcompiRAL(ral.arr[i].dato.codigo, codigo) == 0) {
-
+    if (j < MAX_RAL && ral->arr[i].estado == 'O' && strcmp(ral->arr[i].dato.codigo, codigo) == 0) {
         *pos = i;
         *exito = 1; // Encontrado
     } else {
-
         *pos = (flag == -1) ? i : flag;
         *exito = 0; // No encontrado
     }
@@ -77,13 +75,13 @@ void localizar_ral(RAL ral, char codigo[], int *pos, int *exito, float *costo) {
 
 int alta_ral(RAL *r, Alumno a, int *exito, float *costo) {
     int pos = 0;
-
+    float costoaux = 0.0;
     if (r->cantidad == MAX_RAL) {
         *exito = -1;  // sin espacio
         return *exito;
     }
 
-    localizar_ral(*r, a.codigo, &pos, exito, costo);
+    localizar_ral(r, a.codigo, &pos, exito, &costoaux);
 
     if (*exito == 1) {
         *exito = 0; // ya existe el alumno
@@ -108,8 +106,8 @@ int alta_ral(RAL *r, Alumno a, int *exito, float *costo) {
 
 void baja_ral(RAL *r, Alumno a, int *exito, float *costo) {
     int pos = 0;
-
-    localizar_ral(*r, a.codigo, &pos, exito, costo);
+    float costoaux = 0.0;
+    localizar_ral(r, a.codigo, &pos, exito, &costoaux);
 
     if (*exito != 1) {
         *exito = -1; // no se encontró el alumno
@@ -130,24 +128,19 @@ void baja_ral(RAL *r, Alumno a, int *exito, float *costo) {
     }
 }
 
-Alumno evocar_ral(RAL r, char codigo[], int *exito, float *costo) {
+Alumno evocar_ral(RAL *r, char codigo[], int *exito, float *costo) {
     int pos = 0;
-    Alumno aux;
+    Alumno aux = {"", "", "", 0, ""};
     float c = 0.0;
 
     localizar_ral(r, codigo, &pos, exito, &c);
 
     if (*exito == 1) {
         *costo = c;
-        return r.arr[pos].dato; // alumno encontrado
+        return r->arr[pos].dato;
     } else {
         *costo = c;
-        *exito = 0; // no encontrado
-        strcpy(aux.codigo, "");
-        strcpy(aux.nombreapellido, "");
-        strcpy(aux.correo, "");
-        aux.nota = 0;
-        strcpy(aux.condicionFinal, "");
+        *exito = 0;
         return aux;
     }
 }
